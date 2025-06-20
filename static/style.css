@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+button.selected {
+  border: 3px solid royalblue;
+  box-shadow: 0 0 5px rgba(65, 105, 225, 0.6);
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 30px;
+  color: darkblue;
+}
+
+.result {
+  font-size: 100px;
+  font-weight: bold;
+  color: darkblue; 
+}
+
+#computer-hand{
+    font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column; /* ボタンを縦に並べる */
+    align-items: center;
+  }
+
+  button {
+    font-size: 40px;
+    width: 80%;
+  }
+
+  .result {
+    font-size: 12vw; /* 画面幅に応じて可変サイズ */
+  }
+}
